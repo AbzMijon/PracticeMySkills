@@ -44,8 +44,17 @@ mark, rp, rt, ruby, summary, time {
   display: inline;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--main_color);
+  color: #424242;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
 :root {
-  --main__color-black: #ffffff;
+  --main_color: #fff;
 }
 
 /*Defolt settings , fonts , size and e.t.c. before work*/
@@ -59,122 +68,124 @@ textarea {
   background-color: inherit;
 }
 
-input:focus,
-textarea:focus {
-  border-color: #000;
+a {
+  text-decoration: none;
 }
 
 h1,
 .title1 {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 500;
+  color: #55A630;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 65px;
 }
 
 h2,
 .title2 {
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: 42px;
-  font-weight: 400;
-  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 28px;
 }
 
 h3,
 .title3 {
-  font-family: 'open sans';
-  font-size: 30px;
-  line-height: 40px;
+  text-transform: uppercase;
   font-weight: 700;
+  font-size: 35px;
+  line-height: 37px;
 }
 
 h4,
 .title4 {
-  font-family: 'open sans';
-  font-size: 24px;
-  line-height: 32px;
+  text-transform: uppercase;
   font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -0.4px;
+  color: #55A630;
 }
 
 h5,
 .title5 {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
 }
 
 h6,
 .title6 {
-  font-family: 'open sans';
-  font-size: 13px;
-  line-height: 17px;
-  font-weight: 700;
-}
-
-.button--trasparent {
-  display: inline-block;
-  min-width: 270px;
-  min-height: 58px;
-  outline: none;
-  background-color: transparent;
-  font-size: 18px;
-  line-height: 25px;
   font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  border: 2px solid white;
-  -webkit-transition: all 0.3s cubic-bezier(0, 0.99, 0.51, 0.53);
-  transition: all 0.3s cubic-bezier(0, 0.99, 0.51, 0.53);
+  font-size: 25px;
+  line-height: 26px;
+  color: #424242;
 }
 
-.button--trasparent:hover {
-  color: #EC7979;
-  border-color: #EC7979;
+a {
+  color: #424242;
 }
 
-.button--trasparent:active {
-  background-color: #AB4949;
-  border-color: #AB4949;
-  color: white;
-}
-
-.button--red {
+.btn {
   display: inline-block;
-  width: 470px;
-  height: 60px;
+  min-width: 285px;
+  min-height: 66px;
+  background-color: #55A630;
+  outline: none;
   border: none;
-  outline: none;
-  background-color: #EC7979;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  border-radius: 0px 0px 10px 10px;
   -webkit-transition: all 0.3s cubic-bezier(0, 0.99, 0.51, 0.53);
   transition: all 0.3s cubic-bezier(0, 0.99, 0.51, 0.53);
 }
 
-.button--red:hover {
-  background-color: #AB4949;
+.header {
+  padding: 10px 0 20px 0;
 }
 
-.button--red:active {
-  background-color: #EC7979;
-  -webkit-box-shadow: inset 0px 0px 10px #AB4949;
-          box-shadow: inset 0px 0px 10px #AB4949;
+.header__1row {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #55a63080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.subtitle {
-  color: #2194FF;
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Russo One', sans-serif;
+.header__circle {
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #B7ECB1;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
