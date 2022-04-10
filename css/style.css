@@ -6,7 +6,18 @@ article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,foot
 
 /*Root for change the base color*/
 :root {
-  --main__color-black: #ffffff;
+  --main-color: #ffffff;
+  --swiper-theme-color:orange;
+  --swiper-pagination-size: 104px;
+}
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,15px));
+  height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,15px));
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 90%;
+  left: 0;
+  width: 100%;
 }
 
 /*Defolt settings , fonts , size and e.t.c. before work*/
@@ -20,7 +31,7 @@ img {
 }
 
 body {
-  font: 400 18px/21px 'Montserrat', sans-serif;
+  font: 500 16px/26px 'Montserrat', sans-serif;
 }
 
 input,
@@ -30,70 +41,193 @@ textarea {
 
 a {
   text-decoration: none;
+  color: #4A4A4A
 }
 
 h1,
 .title1 {
-  font-size: 0px;
-  line-height: 0px;
-  font-weight: 0;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 78px;
+  letter-spacing: 3.2px;
+  color: #F5F5F5;
 }
 
 h2,
 .title2 {
-  text-transform: none;
-  font-size: 0px;
-  line-height: 0px;
-  font-weight: 0;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: #333333;
 }
 
 h3,
 .title3 {
-  font-family: none;
-  font-size: 0px;
-  line-height: 0px;
-  font-weight: 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67px;
+  letter-spacing: 1px;
 }
 
 h4,
 .title4 {
-  font-family: none;
-  font-size: 0px;
-  line-height: 0px;
-  font-weight: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #4A4A4A;
 }
 
 h5,
 .title5 {
-  font-size: 0px;
-  line-height: 0px;
-  font-weight: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
 }
 
 h6,
 .title6 {
-  font-family: none;
-  font-size: 0px;
-  line-height: 0px;
-  font-weight: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4A4A4A;
 }
 
 .btn {
   display: inline-block;
-  min-width: 0px;
-  min-height: 0px;
+  min-width: 365px;
+  min-height: 65px;
   outline: none;
   background-color: transparent;
-  font-size: 0px;
-  line-height: 0px;
-  font-weight: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
   cursor: pointer;
   border: none;
+  padding: 10px;
   transition: none;
+  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+  border-radius: 10px;
 }
+
+.header {
+  padding: 23px 0;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__item + .header__item {
+  margin-left: 32px;
+}
+.header__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.header__link:hover {
+  color: #E97522;
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+}
+.header__back-call {
+  border: 2px solid #E97522;
+  color: #E97522;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  padding: 8px 25px;
+  border-radius: 10px;
+  margin-right: 22px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+.header__back-call:hover {
+  background: #E97522;
+  color: #fff;
+}
+/*HOME*/
+.home {
+  position: relative;
+  padding: 150px 0 140px 0;
+  background-color: #444444;
+  color: #F5F5F5;
+}
+
+.home__title {
+  margin-bottom: 52px;
+}
+.home__subtitle {
+  max-width: 50%;
+  margin-bottom: 25px;
+  color: #F5F5F5;
+}
+
+.home__text + .home__text {
+  margin-bottom: 32px;
+}
+.home__btn:hover , .home__btn:active{
+  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+}
+.home__block {
+  z-index: 1;
+  position: relative;
+}
+.home__triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 0; 
+  height: 0;
+  border-top: 90px solid transparent;
+  border-left: 180px solid #575757;
+  border-bottom: 90px solid transparent;
+}
+.place {
+  position: relative;
+  text-align: center;
+  padding: 120px 0 80px 0;
+}
+.place__title {
+  margin-bottom: 115px;
+}
+.place .swiper {
+  margin-bottom: 60px;
+}
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

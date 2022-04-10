@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./bootstrap-grid.css">
@@ -14,10 +15,71 @@
 <body>
 
     <header class="header">
-        
+        <div class="container">
+            <div class="header__body">
+                <a href="#" class="header__logo"><img src="./images/logo.svg" alt="" class="headerr__img"></a>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__item"><a href="#" class="header__link">Портфолио</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Виды работ</a></li>
+                        <li class="header__item"><a href="#" class="header__link">О фотостудии</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Услуги и цены</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <button class="header__back-call">ОБРАТНЫЙ ЗВОНОК</button>
+                    <a href="tel:+7 (499) 344 60 91" class="header__call">+7 (499) 344 60 91</a>
+                </div>
+            </div>
+        </div>
     </header>
+
+    <main class="main">
+
+        <section class="home">
+            <div class="container">
+                <div class="home__block">
+                    <h1 class="home__title">Профессиональная фотосессия в студии</h1>
+                    <h2 class="home__subtitle">Наша фотостудия позволит исполнить ваши мечты</h2>
+                    <p class="home__text">Фотографии стали неотъемлемой частью нашей жизни. Это теперь не просто памятные снимки в альбомах, ныне фото становиться способом понравиться окружающим, получить восхищение, заявить о себе всему миру. </p>
+                    <p class="home__text">Выбор правильной фотостудии занимает далеко не последнее место в получение фотографий. И мы с точностью заявляем, что нашей фотостудией вы останетесь довольны и еще не раз захотите возвращаться к нам. </p>
+                <input class="home__btn btn" type="button" value="Получить консультацию">
+                </div>
+            </div>
+            <div class="home__triangle"></div>
+        </section>
+
+        <section class="place">
+            <div class="container">
+                <h2 class="place__title">Наши локации</h2>
+                <div class="swiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="place__card">
+                                <img src="./images/row1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="place__card">
+                                <img src="./images/row2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="place__card">
+                                <img src="./images/row3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <a href="#"><input type="button" class="place__btn btn" value="выбрать локацию"></a>    
+            </div>
+            <img src="./images/Line.png" alt="" class="line">
+        </section>
+    </main>
     
-    <section class="gallery">
+<!--     <section class="gallery">
         <div class="container">
             <div class="gallery__body">
                 <div class="gallery__card gallery__card-1">
@@ -66,7 +128,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section> --> 
 
 
     <!-- scripts -->
