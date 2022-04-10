@@ -115,6 +115,9 @@ h6,
   background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
   border-radius: 10px;
 }
+.btn:hover , .btn:active {
+  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+}
 
 .header {
   padding: 23px 0;
@@ -184,9 +187,7 @@ h6,
 .home__text + .home__text {
   margin-bottom: 32px;
 }
-.home__btn:hover , .home__btn:active{
-  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
-}
+
 .home__block {
   z-index: 1;
   position: relative;
