@@ -16,7 +16,7 @@ const swiper = new Swiper('.swiper', {
 
 //=======================================
 
-/* let userName = prompt('Name:');
+let userName = prompt('Name:');
 let userAge = prompt('Age:');
 let userProgrammer = prompt('Programmer?');
 let userWife = prompt('Wife?');
@@ -29,4 +29,4 @@ const userExit = {
     isAgree: userAgree ,
 }
 
-console.log(userExit); */
+console.log(userExit); 
