@@ -6,7 +6,7 @@ article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,foot
 
 /*Root for change the base color*/
 :root {
-  --main-color: #ffffff;
+  --main-color: #f0ecec;
   --swiper-theme-color:orange;
   --swiper-pagination-size: 104px;
 }
@@ -79,7 +79,7 @@ h4,
 
 h5,
 .title5 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   color: #333333;
@@ -328,4 +328,104 @@ h6,
 .gallery__card-11 {
   grid-column: 3/4;
   grid-row: 5/6;
+}
+
+/*STEPS*/
+.steps {
+  padding: 80px 0 170px 0;
+  text-align: center;
+}
+.steps__title {
+  margin-bottom: 100px;
+}
+.steps__wrap {
+  position: relative;
+  counter-reset: item;
+}
+li:before {
+  position: absolute;
+  content: counter(item);
+  counter-increment: item;
+  bottom: -20px;
+  left: -20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #E97522;
+  padding: 10px 20px;
+  background-color: #F9F4EE;
+  border-radius: 50%;
+}
+.steps__line {
+  position: relative;
+  top: 50%;
+}
+.steps__card {
+  background-color: #ffffff;
+  position: absolute;
+  width: 350px;
+  max-height: 190px;
+  padding: 40px 40px 50px 40px;
+  border: 2px solid #E97522;
+  box-shadow: 0px 24px 38px rgba(220, 220, 220, 0.14), 0px 9px 46px rgba(216, 216, 216, 0.12), 0px 11px 15px rgba(221, 221, 221, 0.2);
+  border-radius: 12px;
+}
+.steps__subtitle {
+  margin-bottom: 10px;
+}
+.steps__card1 {
+  top: -10%;
+  left: 0%;
+}
+.steps__card2 {
+  top: -0;
+  left: 50%;
+}
+.steps__card3 {
+  top: 45%;
+  left: 65%;
+}
+.steps__card4 {
+  top: 35%;
+  left: 10%;
+}
+.steps__card5 {
+  top: 85%;
+  left: 40%;
+}
+
+.photostudio {
+  background-color: #F2F4F4;
+  padding: 60px 0 40px 0;
+}
+.photostudio__subtitle {
+  list-style-type: disc;
+}
+
+.photostudio__title {
+  text-align: center;
+}
+.photostudio__text {
+  margin-bottom: 30px;
+}
+.photostudio__item {
+  cursor: pointer;
+  margin: 30px;
+}
+.photostudio__item:hover {
+  text-decoration: underline;
+}
+.photostudio__more {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 16px;
+  color: #E97522;
+}
+.photostudio__more:hover{
+  color: #ffa600;
+}
+.fa-angle-down {
+  margin-left: 15px;
+  font-size: 25px;
 }
