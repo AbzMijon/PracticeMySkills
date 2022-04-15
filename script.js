@@ -11,22 +11,3 @@ const swiper = new Swiper('.swiper', {
     },
     slidesPerView: 3,
 });
-
-
-
-//=======================================
-
-let userName = prompt('Name:');
-let userAge = prompt('Age:');
-let userProgrammer = prompt('Programmer?');
-let userWife = prompt('Wife?');
-let userAgree = prompt('Agree?');
-const userExit = {
-    name:userName ,
-    age:userAge ,
-    isProgrammer: userProgrammer ,
-    isWife: userWife ,
-    isAgree: userAgree ,
-}
-
-console.log(userExit); 
