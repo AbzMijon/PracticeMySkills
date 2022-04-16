@@ -12,15 +12,59 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
 });
 
+//hometask =================================
 
+//Task 1
+function addition(num) {
+    let sum = null;
+    for (let i = 0; i <= num; i++) {
+        sum += i;
+    }    
+    console.log(sum);
+}
+addition(100);
 
-function getNumbersSum(num){
+//Task 2
+function percent(sumCredit) {
+    let percentInYear = 0.17;
+    let creaditYear = 5;
+    return (sumCredit * percentInYear) * (creaditYear - 1);
+}
+console.log(percent(100));
 
-        return num.toString().split('').reduce(function(a, b) {
+//Task 3
+function trimString(str , from , to) {
+    str = str.split('');
+    console.log(str.slice(from , to).join(''));
+}
+trimString('heloop', 2, 5);
 
-            return +a + +b;
-
-        })
+//Task 4 ------
+const getSumNumbers = function(num) {
+    let sum = 0;
+    num = String(num).split('');
+    for (let i = 0; i < num; i++) {
+        sum += num[i];
     }
-    
-    console.log(getNumbersSum(36));
+}
+console.log(getSumNumbers(2021));
+
+//Taks 5 -------
+const getSum = function (a , b) {
+    for (let i = 0; i < b; i++) {
+        console.log(a[i]);
+    }
+    if (a === b) {
+        console.log('Equal..');
+    }
+}
+console.log(getSum(1,2));
+
+//Task 6 
+const foo = function() {return console.log('foo')};
+const boo = function() {return console.log('boo')};
+const fooboo = function(bool , foo , boo) {
+    if (bool === true) return foo()
+    return boo();
+    }
+console.log(fooboo(false , foo , boo));
