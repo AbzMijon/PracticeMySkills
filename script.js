@@ -68,3 +68,11 @@ const fooboo = function(bool , foo , boo) {
     return boo();
     }
 console.log(fooboo(false , foo , boo));
+
+
+function makeNegative(num) {
+    if (num === 0) return num;
+      else if (num === -num) return num;
+      else return -num;
+    }
+  console.log(makeNegative(9));
