@@ -104,3 +104,5 @@ const numberTranslate = {
     8: 'восемь' ,
     9: 'девять' 
 }
+const matchResurt = function (firstTeam , secondTeam) {console.log(numberTranslate(2) + ':' + numberTranslate(5));}
+matchResurt() //---------------------
