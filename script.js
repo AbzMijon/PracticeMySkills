@@ -11,3 +11,4 @@ const swiper = new Swiper('.swiper', {
     },
     slidesPerView: 3,
 });
+console.log(12);
