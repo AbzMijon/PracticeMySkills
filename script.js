@@ -104,5 +104,17 @@ const numberTranslate = {
     8: 'восемь' ,
     9: 'девять' 
 }
-const matchResurt = function (firstTeam , secondTeam) {console.log(numberTranslate(2) + ':' + numberTranslate(5));}
-matchResurt() //---------------------
+
+//Task 2
+const student1 = {
+    name: 'Polina',
+    age: 27,
+}
+const student2 = {
+    name: 'Polina',
+    age: 27,
+}
+const firstFunction = Object.keys(student1) + Object.values(student1);
+const secondFunction = Object.keys(student2) + Object.values(student2);
+if (firstFunction === secondFunction) console.log(true);
+else console.log(false);
