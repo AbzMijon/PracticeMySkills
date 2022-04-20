@@ -90,7 +90,7 @@ let userPassAgain = prompt('Repeat Your Password..');
 if (userNameAgain === userInfo.Name && userPassAgain === userInfo.Password) alert(`Добро Пожаловать ${userInfo.Name}!`);
 else alert('Неверный Логин или Пороль!');
 
-//Advanced Level =============
+//Advanced Level ============
 
 //Task 1
 const numberTranslate = {
