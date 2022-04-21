@@ -108,7 +108,7 @@ if (firstFunction === secondFunction) console.log(true);
 else console.log(false);
 
 
-/////////practice
+//////////practice
 
 //1
 const myOBJ2 = {
