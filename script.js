@@ -155,3 +155,35 @@ const middleRubles = function () {
 middleRubles();
 
 //4
+const bigObj = {
+    mainUser: {
+        mainInformation: {
+            name: 'Олег' ,
+            surname: 'Лавров' ,
+            age: 21 ,
+            isWife: true
+        } ,
+        progremmerSkills: {
+            javaScript: {
+                swiperJS: true ,
+                basics: true ,
+                frameworks: false
+            } ,
+            css: {
+                flexbox: true ,
+                gridLayuot: true ,
+                floats: false
+            } ,
+            html: {
+                allSkills: true
+            }
+        } ,
+        contacts: {
+            tel: +3753295720 ,
+            inst: '@oleg.mangol' ,
+            mail: 'oleg228.gmail.com'
+        }
+    }
+}
+if (bigObj.mainUser.progremmerSkills.html.allSkills === true) console.log(`${bigObj.mainUser.mainInformation.name} - agree`);
+else console.log(`${bigObj.mainUser.mainInformation.name} - disagree`);
