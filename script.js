@@ -68,10 +68,10 @@ const salaries = {
     andrey2: 664,
     alexandra: 199
 }
-let middleSalaries = null;
 
 const generatorMiddleSalaries  = function () {
     const valuesInSalaries = Object.values(salaries);
+    let middleSalaries = null;
     for (let i = 0; i < valuesInSalaries.length; i++) {
         middleSalaries = (middleSalaries + valuesInSalaries[i]);
     }
@@ -109,15 +109,49 @@ else console.log(false);
 
 
 /////practice
-const myOBJ = {
-    name:prompt('Enter your nick..') ,
-    age:prompt('Enter your age..') ,
-    isAdmin: prompt('You are admin of this web-site? (Yes / No)') ,
+
+//1
+const myOBJ2 = {
+    name: prompt('Enter your nick..') ,
+    age: +prompt('Enter your age..') ,
     adminChecking: function () {
-        if (this.isAdmin == 'Yes') alert('Welcome boss!')
-        else if (this.isAdmin.length < 2 || this.isAdmin.length > 3) alert('Sintacsic error ;(');
-        else if (typeof this.isAdmin !== 'string') alert('Sintacsic error ;(');
-        else alert(this.name + ', you are NOT a Administrator!');
+        if (this.name === 'administrator' && this.age === 19) alert('Welcome ' + this.name + '!');
+        else alert(this.name + ' you Are NOT a Administrator');
     }
 }
-console.log(myOBJ);
+console.log(myOBJ2.adminChecking());
+
+//2
+const constructure = function(name , age , work) {
+    const obj = {
+        name: name ,
+        age: age ,
+        work , work
+    }
+    if (work === 'web developer') {
+        for (let i = 0; i <= work.length; i++) {
+            console.log(`In this work ${work.length} words. They are ${work[i]}`);
+        }
+    }
+}
+console.log(constructure('Egor' , 18 , 'web developer'));
+
+//3
+const workers = {
+    vlad: 200,
+    egor: 350,
+    artem: 120,
+    danik: 650,
+    adel: 1000
+}
+const middleRubles = function () {
+    const value = Object.values(workers);
+    let result = null;
+    for (let i = 0; i < value.length; i++) {
+        result = result + value[i];
+    }
+    console.log(result / value.length);
+}
+middleRubles();
+
+//4
