@@ -13,6 +13,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+
 //Homework
 
 //Task 1
@@ -92,19 +93,6 @@ else alert('Неверный Логин или Пороль!');
 
 //Advanced Level ========================
 
-//Task 1
-const numberTranslate = {
-    1: 'один',
-    2: 'два' ,
-    3: 'три' ,
-    4: 'четыре' ,
-    5: 'пять' ,
-    6: 'шесть' ,
-    7: 'семь' ,
-    8: 'восемь' ,
-    9: 'девять' 
-}
-
 //Task 2
 const student1 = {
     name: 'Polina',
@@ -118,3 +106,18 @@ const firstFunction = Object.keys(student1) + Object.values(student1);
 const secondFunction = Object.keys(student2) + Object.values(student2);
 if (firstFunction === secondFunction) console.log(true);
 else console.log(false);
+
+
+/////practice
+const myOBJ = {
+    name:prompt('Enter your nick..') ,
+    age:prompt('Enter your age..') ,
+    isAdmin: prompt('You are admin of this web-site? (Yes / No)') ,
+    adminChecking: function () {
+        if (this.isAdmin == 'Yes') alert('Welcome boss!')
+        else if (this.isAdmin.length < 2 || this.isAdmin.length > 3) alert('Sintacsic error ;(');
+        else if (typeof this.isAdmin !== 'string') alert('Sintacsic error ;(');
+        else alert(this.name + ', you are NOT a Administrator!');
+    }
+}
+console.log(myOBJ);
