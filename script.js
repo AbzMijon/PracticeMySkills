@@ -93,6 +93,26 @@ else alert('Неверный Логин или Пороль!');
 
 //Advanced Level ========================
 
+//Task 1
+let firstTeamGoals = '2';
+let secondTeamGoals = '5';
+const obj = {
+    1:'Один',
+    2:'Два',
+    3:'Три',
+    4:'Четыре',
+    5:'Пять',
+    6:'Шесть',
+    7:'Семь',
+    8:'Восемь',
+    9:'Девять'
+}
+const objValues = Object.values(obj);
+for (let i = 0; i < objValues.length; i++) {
+    if (firstTeamGoals == i) console.log(objValues[i - 1]);
+    else if (secondTeamGoals == i) console.log(objValues[i - 1]);
+}
+
 //Task 2
 const student1 = {
     name: 'Polina',
@@ -187,3 +207,11 @@ const bigObj = {
 }
 if (bigObj.mainUser.progremmerSkills.html.allSkills === true) console.log(`${bigObj.mainUser.mainInformation.name} - agree`);
 else console.log(`${bigObj.mainUser.mainInformation.name} - disagree`);
+
+const firstObj = {
+    name: 'Artem' ,
+    age: 18
+}
+const secondObj = {...firstObj};
+secondObj.name = 'NOT Artem'
+console.log(secondObj);
