@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+/* const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
     // Navigation arrows
@@ -114,7 +114,9 @@ let mainResult2 = [];
 for (let i = 0; i < mainRandomNumbers.length; i++) {
     mainResult2.push(mainRandomNumbers[i]**2);
 }
-alert(mainResult2);
+alert(mainResult2); */
 
 
 // Practice Skills With JavaScript
+
+//1
