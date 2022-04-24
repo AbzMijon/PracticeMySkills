@@ -1,4 +1,4 @@
-/* const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
     // Navigation arrows
@@ -12,7 +12,7 @@
     slidesPerView: 3,
 });
 
-
+/* 
 //Hometask
 
 //Task 1
