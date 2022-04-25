@@ -117,7 +117,6 @@ for (let i = 0; i < mainRandomNumbers.length; i++) {
 alert(mainResult2);
 */
 
-
 // Practice Skills With JavaScript
 
 //1
