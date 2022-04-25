@@ -142,3 +142,10 @@ const treatmentUserInfo = function () {
 }
 treatmentUserInfo();
 console.log(mainUser);
+
+//2
+function solution(str, ending){
+    if(str[str.length - 2] + str[str.length - 1] == ending) return true;
+    return false;
+}
+console.log(solution('abc' , 'c'));
