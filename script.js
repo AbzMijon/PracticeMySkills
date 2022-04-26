@@ -138,3 +138,5 @@ arr.push(Math.max(...splitHighAndLow));
 arr.push(Math.min(...splitHighAndLow));
 
 console.log(arr);
+
+
