@@ -139,4 +139,4 @@ arr.push(Math.min(...splitHighAndLow));
 
 console.log(arr);
 
-
+//Egor Doing This You Will CAN!!!!!!!
