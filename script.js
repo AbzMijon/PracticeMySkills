@@ -83,12 +83,13 @@ const test = () => (someObj.name === 'lolly') ? true :(someObj.name === 'LOLLY')
 console.log(test);
 
 //Constructure
-const someFunc = function (name , age , workplace , obj) {
+const someFunc = function (name , age , workplace) {
     this.name = name;
-    console.log(`hello ${name}`);
-    console.log(age);
+    this.age = age;
+    this.workplace = workplace;
+    this.isLead = false;
 }
-someFunc('Vlad' , 109);
+console.log(someFunc.age);
 
-
-const newFunc = new someFunc('Dima' , 12);
+const newUser = new someFunc('Egor' , 16 , 'Front-End Developer')
+console.log(newUser.name);
