@@ -59,3 +59,36 @@ function solution(str, ending){
 }
 console.log(solution('abc' , 'c')); */
 
+const personExample = (name , workplace , country , send) => {
+    this.name = name;
+    this.workplace = workplace ;
+    this.country = country;
+    this.send = send;
+    let sendingLetterInput = {
+        name: name,
+        workplace: workplace,
+        country: country,
+        letter: send,
+    }
+    console.log(sendingLetterInput);
+    const thx = alert('Thanks For Your Letter! Wait some minutes and we will answering your quastion!');
+}
+personExample('egor' , 'backend developer' , 'Russia' , 'I can write nice code and kwon VUE.JS');
+
+const someObj = {
+    name: 'LOLLY',
+}
+
+const test = () => (someObj.name === 'lolly') ? true :(someObj.name === 'LOLLY') ? console.log('UPPERCASE!!!!!!!') : false;
+console.log(test);
+
+//Constructure
+const someFunc = function (name , age , workplace , obj) {
+    this.name = name;
+    console.log(`hello ${name}`);
+    console.log(age);
+}
+someFunc('Vlad' , 109);
+
+
+const newFunc = new someFunc('Dima' , 12);
