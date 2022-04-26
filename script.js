@@ -93,3 +93,48 @@ console.log(someFunc.age);
 
 const newUser = new someFunc('Egor' , 16 , 'Front-End Developer')
 console.log(newUser.name);
+
+//Hometask
+
+//1 ---------------------------------- About ForEach
+const fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987];
+fibonacci.forEach(element => {
+    console.log(element);  
+});
+
+fibonacci.forEach(function (element) {
+    console.log(element);
+})
+
+//2 ---------------------------- About Map
+const users = ['Darya', 'Masha', 'Denis', 'Vitaliy', 'Polina', 'Anton'];
+
+//3 ------------------------------- About Filter
+const numbers = [7, -4, 32, -90, 54, 32, -21];
+const positiveNumbers = numbers.filter( num => num >= 0 );
+console.log(positiveNumbers);
+
+//4 ------------------------------ About Reduce
+
+//5 ---------------------------------- About Find
+const listNumbers = [5, 9, 13, 24, 54, 10, 13, 99, 1, 5];
+console.log(listNumbers.find(num => num % 2 === 0));
+
+//6 -------------------------------------- Big Construcure
+
+//7 ------------------ Trolls
+let commStr = 'This website is for losers LOL!';
+let newCommStr = commStr.replace( /[aeouyi]/gi , '#' );
+console.log(commStr);
+console.log(newCommStr);
+
+//8 ----------------------------------------- map
+
+//9 -------------------------------------- Doint Any Way
+let highAndLow = ("1 2 3 4 5"); // return "5 1"
+let splitHighAndLow = highAndLow.split(' ');
+let arr = [];
+arr.push(Math.max(...splitHighAndLow));
+arr.push(Math.min(...splitHighAndLow));
+
+console.log(arr);
