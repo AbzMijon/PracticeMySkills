@@ -29,7 +29,7 @@ const swiper = new Swiper('.swiper', {
 // Practice Skills With JavaScript
 
 //1
-let userName = prompt('Create Name..');
+/* let userName = prompt('Create Name..');
 let userPass = prompt('Create Password..');
 const mainUser = {
     name: userName ,
@@ -57,4 +57,5 @@ function solution(str, ending){
     if(str[str.length - 2] + str[str.length - 1] == ending) return true;
     return false;
 }
-console.log(solution('abc' , 'c'));
+console.log(solution('abc' , 'c')); */
+
