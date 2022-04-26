@@ -128,7 +128,7 @@ let newCommStr = commStr.replace( /[aeouyi]/gi , '#' );
 console.log(commStr);
 console.log(newCommStr);
 
-//8 ----------------------------------------- map
+//8 ----------------------------------------- Map
 
 //9 -------------------------------------- Doint Any Way
 let highAndLow = ("1 2 3 4 5"); // return "5 1"
