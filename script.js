@@ -140,3 +140,8 @@ arr.push(Math.min(...splitHighAndLow));
 console.log(arr);
 
 //Egor Doing This You Will CAN!!!!!!!
+
+const testArr = [1, 2, 3, 4, 5, 111]
+for (const iterator of testArr) {
+    console.log(iterator);
+}
