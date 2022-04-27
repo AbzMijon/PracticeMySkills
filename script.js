@@ -111,3 +111,6 @@ const firstFunc = (name , callback) => {
 const callbackFunc = () => alert('Mission complete! Person was died!' + firstFunc.name);
 firstFunc('Влад' , callbackFunc)
 
+let someArr = ['Vlad', 'Egor', 'Eror 404', undefined , null];
+let someArrFilter = someArr.filter((num) => typeof num === typeof 'string');
+console.log(someArrFilter);
