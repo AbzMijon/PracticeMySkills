@@ -108,9 +108,23 @@ const firstFunc = (name , callback) => {
     alert(`We need kill ${name}!`);
     callback();
 }
-const callbackFunc = () => alert('Mission complete! Person was died!' + firstFunc.name);
+const callbackFunc = () => alert('Mission complete! Person was died!');
 firstFunc('Влад' , callbackFunc)
 
 let someArr = ['Vlad', 'Egor', 'Eror 404', undefined , null];
 let someArrFilter = someArr.filter((num) => typeof num === typeof 'string');
 console.log(someArrFilter);
+
+//Методы
+let arrForMetods = [10, 22, 31, 467, 6, 7, 8, 123];
+let arrMap = arrForMetods.map((multiplay) => `Number:${multiplay}`);
+console.log(arrMap);
+
+let arrForEach = arrForMetods.forEach((elem , i) => {
+    console.log(`${i}: ${elem}`);
+})
+
+let arr1 = [[1,3],[2,4]];
+let arr2 = [[5,6],[10,120]];
+let con = arr1[0].concat(arr1[1] , arr2[0] , arr2[1]);
+console.log(con);
