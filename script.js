@@ -26,7 +26,14 @@ let usersMember = users.map((elem , i) => console.log(`member ${i + 1}: ${elem}`
 let usersMember2 = users.map(function (elem , i) {console.log(`member ${i + 1}: ${elem}`)}); //Function Declaration
 
 //Task 3
-const numbers = [7, -4, 32, -90, 54, 32, -21];
-let numbersPositive = numbers.filter(num => num >= 0); //Arrow Function
-let numbersPositive2 = numbers.filter(function (num) {num >= 0}); //Function Declaration
+const filterNumbers = [7, -4, 32, -90, 54, 32, -21];
+let numbersPositive = filterNumbers.filter(num => num > 0); //Arrow Function
+let numbersPositive2 = filterNumbers.filter(function (num) {num >= 0}); //Function Declaration
 console.log(numbersPositive);
+
+//Task 4 ---------
+
+//Task 5 ------------------
+const findNumbers = [5, 9, 13, 24, 54, 10, 13, 99, 1, 5];
+let numbersDivide = findNumbers.find(num => num % 2 === 0);
+console.log(numbersDivide);
