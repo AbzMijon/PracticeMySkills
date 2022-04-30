@@ -37,3 +37,6 @@ console.log(numbersPositive);
 const findNumbers = [5, 9, 13, 24, 54, 10, 13, 99, 1, 5];
 let numbersDivide = findNumbers.find(num => num % 2 === 0);
 console.log(numbersDivide);
+
+const obj = {a:'1' , b:'2' , c:'3'};
+console.log(obj);
