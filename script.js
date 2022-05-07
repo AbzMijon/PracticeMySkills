@@ -14,5 +14,5 @@ const swiper = new Swiper('.swiper', {
 
 let headerLink = document.querySelectorAll('.header__link');
 for (const iterator of headerLink) {
-    iterator.style.color = 'red';
+    iterator.style.color = 'black';
 }
