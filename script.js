@@ -13,4 +13,3 @@ const swiper = new Swiper('.swiper', {
 });
 
 let headerLink = document.querySelectorAll('.header__link');
-for (const iterator of headerLink) 
