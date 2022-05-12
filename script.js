@@ -11,5 +11,3 @@ const swiper = new Swiper('.swiper', {
     },
     slidesPerView: 3,
 });
-
-let headerLink = document.querySelectorAll('.header__link');
