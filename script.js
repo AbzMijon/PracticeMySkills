@@ -26,3 +26,4 @@ let someNum = 15;
 let vowelsStr = 'hello!';
 let vowelsStrResult = vowelsStr.replace(/[eyuioa]/gi, '');
 console.log(vowelsStr.length - vowelsStrResult.length);
+
